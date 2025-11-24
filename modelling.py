@@ -1,0 +1,11 @@
+def print_report(user, analysis):
+    print("\n-------- ORAL HEALTH REPORT --------")
+    print("Name:", user.name)
+    print("Age:", user.age)
+    print("------------------------------------")
+    print("Detected Issue:", analysis["issue"])
+    print("Model Confidence:", analysis["confidence"], "%")
+    print("Image Clarity Score:", analysis["clarity"])
+    print("------------------------------------")
+    print("Recommendation:", analysis["recommendation"])
+    print("------------------------------------\n")
